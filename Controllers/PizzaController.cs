@@ -8,21 +8,15 @@ namespace ContosoPizza.Controlers;
 [Route("[controller]")]
 public class PizzaController : ControllerBase
 {
-    NeoServer.System.Manager.DBManager db;
 
     public PizzaController()
     {
-        db=new NeoServer.System.Manager.DBManager();
-        db.Connect();
         Console.WriteLine("test");
     }
 
     [HttpGet]
     public async Task<ActionResult<List<Pizza>>> GetAll()
     {
-        string testQuery = "SELECT * FROM books ";
-        db.SendQuery(testQuery);
-        //Console.WriteLine(s);
         Console.WriteLine("Get ");
         Console.WriteLine("Requset");
         return PizzaService.GetAll();

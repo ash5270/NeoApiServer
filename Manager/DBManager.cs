@@ -16,17 +16,11 @@ namespace NeoServer.System.Manager
 
         public DBManager(string database)
         { 
-            mDbStr =String.Format("Server=localhost; Port=3306;Database={0};Uid=rupso;Pwd=tan04015",database);
+            mDbStr = String.Format("Server=localhost; Port=3306;Database={0};Uid=rupso;Pwd=tan04015",database);
         }
 
         //Dispose로 connect clear
         public void Dispose()
-        {
-           
-        }
-
-        //Connecting 
-        public async void Connect()
         {
            
         }
