@@ -21,29 +21,34 @@ public class LoginController : ControllerBase
         return Ok(hash);
     }
 
-  
+
     //USER DATA 생성
     [HttpPost]
     [Route("SignUp")]
     public async Task<IActionResult> SignUp(SignUpData signUpData)
     {
-        var result= await LoginService.SignUp(signUpData);
-        if(!result)
+        var result = await LoginService.SignUp(signUpData);
+        if (!result)
             return NoContent();
-        else 
+        else
             return Ok();
     }
 
     [HttpPost]
     [Route("SignIn")]
-    public async Task<IActionResult> SignIn(LoginData loginData)
+    public async Task<ActionResult<byte[]>> SignIn(LoginData loginData)
     {
-       var result = await LoginService.SignIn(loginData);
-        if(!result.Item1)
+        var result = await LoginService.SignIn(loginData);
+        if (!result.Item1)
+        {
+            Console.WriteLine("login failed");
             return NoContent();
-        else 
-            return Ok(result.Item2.ToByteArray());
+        }
+        //Convert.ToBase64String를 안해도 데이터는 성공적으로 보내짐
+        var data = new Dictionary<string, object>{
+        {"uuid",Convert.ToBase64String(result.Item2.ToByteArray())}
+    };
+        string json = JsonSerializer.Serialize(data);
+        return Ok(json);
     }
-
- 
 }
