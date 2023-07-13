@@ -11,12 +11,12 @@ public class DBManager : IDisposable
     //mysql 초기화
     public DBManager()
     {
-        mDbStr = "Server=192.168.123.104; Port=3306;Database=neo_server;Uid=rupso;Pwd=vmfkek5270";
+        mDbStr = "Server=192.168.123.104; Port=3306;Database=neo_server;Uid=;Pwd=";
     }
 
     public DBManager(string database)
     {
-        mDbStr = String.Format("Server=localhost; Port=3306;Database={0};Uid=rupso;Pwd=vmfkek5270", database);
+        mDbStr = String.Format("Server=localhost; Port=3306;Database={0};Uid=;Pwd=", database);
     }
 
     //Dispose로 connect clear
