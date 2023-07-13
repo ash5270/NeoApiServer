@@ -12,6 +12,7 @@
           "Microsoft.AspNetCore.OpenApi": "7.0.1",
           "Microsoft.IdentityModel.Tokens": "6.27.0",
           "MySql.Data": "8.0.32",
+          "MySqlConnector": "2.3.0-beta.1",
           "StackExchange.Redis": "2.6.96",
           "Swashbuckle.AspNetCore": "6.4.0",
           "System.IdentityModel.Tokens.Jwt": "6.27.0"
@@ -83,6 +84,7 @@
       },
       "Microsoft.CSharp/4.5.0": {},
       "Microsoft.Extensions.ApiDescription.Server/6.0.5": {},
+      "Microsoft.Extensions.Logging.Abstractions/7.0.0": {},
       "Microsoft.IdentityModel.Abstractions/6.27.0": {
         "runtime": {
           "lib/net6.0/Microsoft.IdentityModel.Abstractions.dll": {
@@ -193,6 +195,17 @@
           },
           "lib/net7.0/krbcc64.dll": {
             "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "MySqlConnector/2.3.0-beta.1": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0"
+        },
+        "runtime": {
+          "lib/net7.0/MySqlConnector.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.3.0.0"
           }
         }
       },
@@ -495,6 +508,13 @@
       "path": "microsoft.extensions.apidescription.server/6.0.5",
       "hashPath": "microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512"
     },
+    "Microsoft.Extensions.Logging.Abstractions/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kmn78+LPVMOWeITUjIlfxUPDsI0R6G0RkeAMBmQxAJ7vBJn4q2dTva7pWi65ceN5vPGjJ9q/Uae2WKgvfktJAw==",
+      "path": "microsoft.extensions.logging.abstractions/7.0.0",
+      "hashPath": "microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512"
+    },
     "Microsoft.IdentityModel.Abstractions/6.27.0": {
       "type": "package",
       "serviceable": true,
@@ -557,6 +577,13 @@
       "sha512": "sha512-SDzjcf0mVFtWfpEXJwOBYknskbN55H1WEpTzMnlKaaNrT6Mkz0/36NPdpxh7cRrW3cqbuDCFKsxM6rE0CRewhA==",
       "path": "mysql.data/8.0.32",
       "hashPath": "mysql.data.8.0.32.nupkg.sha512"
+    },
+    "MySqlConnector/2.3.0-beta.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-nQ7nW4TFp1rE1HowCWOGRKrBPcKIWMOFQBs/1cI76REm4X6cQ808E5aMgW4VdvPM6y17LPFvakmwWuU65CXMpg==",
+      "path": "mysqlconnector/2.3.0-beta.1",
+      "hashPath": "mysqlconnector.2.3.0-beta.1.nupkg.sha512"
     },
     "Pipelines.Sockets.Unofficial/2.2.2": {
       "type": "package",

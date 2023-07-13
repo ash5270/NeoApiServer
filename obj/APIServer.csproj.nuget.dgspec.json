@@ -54,6 +54,10 @@
               "target": "Package",
               "version": "[8.0.32, )"
             },
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[2.3.0-beta.1, )"
+            },
             "StackExchange.Redis": {
               "target": "Package",
               "version": "[2.6.96, )"
@@ -86,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/rupso/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/rupso/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
         }
       }
     }

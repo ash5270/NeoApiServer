@@ -1,6 +1,6 @@
 using StackExchange.Redis;
 
-namespace NeoServer.System.Manager
+namespace NeoServer.Manager
 {
     public class RedisManager{
         private ConnectionMultiplexer mRedisConnection;

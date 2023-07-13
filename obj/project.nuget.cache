@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "GJkNrS1WNtZ5arMXXNOfU35FMqALWkE5xmNIiYths71LFIc/88ab4T20RZZs+zjzLx4UvF5rmq2Bx03NurU6XA==",
+  "dgSpecHash": "WBqdKq0X34jdLmr4EH+rXrs13AaPU85Q47ldbqeA/kEM57qrfr2hSAa2L6Sy9zmVKZfsURaNMkMUqhHhKdxpOw==",
   "success": true,
   "projectFilePath": "/home/rupso/code/APIServer/APIServer.csproj",
   "expectedPackageFiles": [
@@ -12,6 +12,7 @@
     "/home/rupso/.nuget/packages/microsoft.aspnetcore.openapi/7.0.1/microsoft.aspnetcore.openapi.7.0.1.nupkg.sha512",
     "/home/rupso/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
     "/home/rupso/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "/home/rupso/.nuget/packages/microsoft.extensions.logging.abstractions/7.0.0/microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
     "/home/rupso/.nuget/packages/microsoft.identitymodel.abstractions/6.27.0/microsoft.identitymodel.abstractions.6.27.0.nupkg.sha512",
     "/home/rupso/.nuget/packages/microsoft.identitymodel.jsonwebtokens/6.27.0/microsoft.identitymodel.jsonwebtokens.6.27.0.nupkg.sha512",
     "/home/rupso/.nuget/packages/microsoft.identitymodel.logging/6.27.0/microsoft.identitymodel.logging.6.27.0.nupkg.sha512",
@@ -21,6 +22,7 @@
     "/home/rupso/.nuget/packages/microsoft.openapi/1.4.3/microsoft.openapi.1.4.3.nupkg.sha512",
     "/home/rupso/.nuget/packages/microsoft.win32.systemevents/4.7.0/microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "/home/rupso/.nuget/packages/mysql.data/8.0.32/mysql.data.8.0.32.nupkg.sha512",
+    "/home/rupso/.nuget/packages/mysqlconnector/2.3.0-beta.1/mysqlconnector.2.3.0-beta.1.nupkg.sha512",
     "/home/rupso/.nuget/packages/pipelines.sockets.unofficial/2.2.2/pipelines.sockets.unofficial.2.2.2.nupkg.sha512",
     "/home/rupso/.nuget/packages/portable.bouncycastle/1.9.0/portable.bouncycastle.1.9.0.nupkg.sha512",
     "/home/rupso/.nuget/packages/stackexchange.redis/2.6.96/stackexchange.redis.2.6.96.nupkg.sha512",

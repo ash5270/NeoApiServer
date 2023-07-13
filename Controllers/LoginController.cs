@@ -6,7 +6,6 @@ using NeoServer.Services;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-
 namespace NeoServer.Controlers;
 
 [ApiController]
@@ -21,15 +20,14 @@ public class LoginController : ControllerBase
         return Ok(hash);
     }
 
-
     //USER DATA 생성
     [HttpPost]
     [Route("SignUp")]
     public async Task<IActionResult> SignUp(SignUpData signUpData)
     {
-        var result = await LoginService.SignUp(signUpData);
+        var result = await RegisterService.SignUp(signUpData);
         if (!result)
-            return NoContent();
+            return NotFound();
         else
             return Ok();
     }
@@ -42,12 +40,14 @@ public class LoginController : ControllerBase
         if (!result.Item1)
         {
             Console.WriteLine("login failed");
-            return NoContent();
+            string msg= "{\"msg\":\"ID Not Found\"}";
+            return NotFound(msg);
         }
         //Convert.ToBase64String를 안해도 데이터는 성공적으로 보내짐
         var data = new Dictionary<string, object>{
+        {"id",loginData.ID},
         {"uuid",Convert.ToBase64String(result.Item2.ToByteArray())}
-    };
+        };
         string json = JsonSerializer.Serialize(data);
         return Ok(json);
     }
