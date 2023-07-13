@@ -43,7 +43,15 @@ public class CharacterController : ControllerBase
     [HttpPatch("{id}")]
     public async Task<IActionResult> UpdateCharacter(int id, CharacterData data)
     {
-        return Ok();
+        mAuth= new AuthProcess(Request.Headers);
+        if(!await mAuth.Check())
+            return NotFound();
+        Console.WriteLine("Update Success");
+        var result = await CharacterService.UpdateCharacter(id,data);
+        if(result)
+            return Ok();
+        else
+            return NotFound();
     }
 
     [HttpGet("{id}")]

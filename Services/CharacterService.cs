@@ -47,6 +47,22 @@ public static class CharacterService
         return true;
     }
 
+    public static async Task<bool> UpdateCharacter(int userId, CharacterData data)
+    {
+        MySqlCommand command = new MySqlCommand();
+        var query = "UPDATE user_character set (char_exp,char_level,char_hp,char_pos_x,char_pos_y) = (@exp,@level,@hp,@pos_x,@pos_y) WHERE id = @id";
+        command.CommandText =query;
+        command.Parameters.Add(new MySqlParameter("@id",userId));
+        command.Parameters.Add(new MySqlParameter("@exp",data.EXP));
+        command.Parameters.Add(new MySqlParameter("@level",data.Level));
+        command.Parameters.Add(new MySqlParameter("@hp",data.HP));
+        command.Parameters.Add(new MySqlParameter("@pos_x",data.PosX));
+        command.Parameters.Add(new MySqlParameter("@pos_y",data.PosY));
+        var result = await mMysqlConnection.ExecuteQuery(command);
+        
+        return true;
+    }
+
     private static async Task<int> CheckUser(string id)
     {
         MySqlCommand command = new MySqlCommand();
