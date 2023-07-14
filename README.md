@@ -1,13 +1,13 @@
 # NeoApiServer
 
 ### asp.net 활용
-![그림1](https://github.com/ash5270/NeoApiServer/assets/48472256/80113dcc-27b4-4a24-9343-56e58341d946)
+![그림1](https://github.com/ash5270/NeoApiServer/assets/48472256/235e42b0-5401-493b-a40c-70d2a6f06b93)
 전체적인 서버 아키텍처
 
-
-![그림2](https://github.com/ash5270/NeoApiServer/assets/48472256/3c1ce299-63df-4256-b5b2-d12f03f24b7a)
+![그림2](https://github.com/ash5270/NeoApiServer/assets/48472256/42306c6d-7c34-427b-b78e-ebec98aa272c)
 api 
-Deadcated Server
+
+## Deadcated Server
 https://github.com/ash5270/NeoServer
 
 ### 클라이언트 사이드 서버
